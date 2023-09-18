@@ -1,9 +1,9 @@
 resource "aws_lightsail_instance" "lightsail_server" {
   name               = "lightsail_server_instance"
-  availability_zone  = "us-east-1b"  # Change this to your preferred AWS availability zone
-  blueprint_id       = "amazon_linux_2"  # Blueprint ID for Amazon Linux 2
-  bundle_id          = "nano_2_0"  # Change this to your preferred bundle ID
-  #key_pair_name      = "your_key_pair_name"  # Specify your key pair name here
+  availability_zone  = "us-east-1b"  
+  blueprint_id       = "amazon_linux_2" 
+  bundle_id          = "nano_2_0"  
+  #key_pair_name      = "your_key_pair_name"  
 
   user_data          = <<-EOT
                         #!/bin/bash
